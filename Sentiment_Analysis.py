@@ -53,11 +53,10 @@ if __name__ == '__main__':
 	args = parser.parse_args()
 
 	with codecs.open(args.inFile,'r','utf-8') as f:
-          abstract = TextBlob(f)
+            abstract = TextBlob(f)
           
 
 	with open(args.outFile,'a') as f:
-		f.write(abstract.sentiment)
-                f.write('%d\n' % abstract.sentiment)
+            f.write('%d\n' % abstract.sentiment)
 #testimonial = TextBlob("Textblob is amazingly simple to use. What great fun!")
 #testimonial.sentiment

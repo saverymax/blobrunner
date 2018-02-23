@@ -56,8 +56,8 @@ if __name__ == '__main__':
           abstract = TextBlob(f)
           
 
-	with open(args.outFile,'w') as f:
+	with open(args.outFile,'a') as f:
 		f.write(abstract.sentiment)
-
+                f.write('%d\n' % abstract.sentiment)
 #testimonial = TextBlob("Textblob is amazingly simple to use. What great fun!")
 #testimonial.sentiment

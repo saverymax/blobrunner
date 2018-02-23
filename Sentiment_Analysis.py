@@ -53,7 +53,7 @@ if __name__ == '__main__':
 	args = parser.parse_args()
 
 	with codecs.open(args.inFile,'r','utf-8') as f:
-            abstract = TextBlob(f)
+            abstract = TextBlob(f.read())
           
 
 	with open(args.outFile,'a') as f:

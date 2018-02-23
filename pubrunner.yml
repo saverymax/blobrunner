@@ -10,5 +10,5 @@ resources:
          format: txt
          rename: PUBMED
 run:
-   - python sentiment_analysis.py --inFile {IN:PUBMED/%} --outFile {OUT:sentiment.txt}
+   - python Sentiment_Analysis.py --inFile {IN:PUBMED/%} --outFile {OUT:sentiment.txt}
 output: sentiment.txt

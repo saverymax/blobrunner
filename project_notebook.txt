@@ -1,0 +1,13 @@
+ip: 34.207.139.63
+ssh: 
+
+making a ssh key:
+https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html
+
+https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
+
+https://stackoverflow.com/questions/3828164/how-do-i-access-my-ssh-public-key
+
+test:
+
+pubrunner --test https://github.com/jakelever/pubrunner/tree/master/examples/CountWords

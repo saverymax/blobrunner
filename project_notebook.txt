@@ -1,6 +1,3 @@
-ip: 34.207.139.63
-ssh: 
-
 making a ssh key:
 https://confluence.atlassian.com/bitbucketserver/creating-ssh-keys-776639788.html
 
@@ -8,6 +5,21 @@ https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key
 
 https://stackoverflow.com/questions/3828164/how-do-i-access-my-ssh-public-key
 
+Documentation for PubRunner
+
+https://github.com/jakelever/pubrunner
+
 test:
 
 pubrunner --test https://github.com/jakelever/pubrunner/tree/master/examples/CountWords
+
+https://github.com/saverymax/textmining-test.git
+git remote add origin https://github.com/saverymax/textmining-test.git
+
+
+Jakes advice:
+I put together a little script that can convert the BioC XML format to a tab-delimited file (which may be easier to work with).
+So in the pubrunner.yml file, you would change format to bioc for all the resources.
+And then add in a command like this: python convertBioCToTSV.py --inBioC {IN:PUBMED/%} --outTSV {OUT:PUBMED_TSV/%.tsv}
+(before you run Sentiment Analysis)
+Then your Sentiment Analysis script could load this tab-delimited file instead of dealing with an XML or TXT file

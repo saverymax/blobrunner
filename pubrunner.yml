@@ -4,11 +4,11 @@ url: https://github.com/saverymax/blobrunner
 resources:
    full:
       - PUBMED:
-         format: txt
+         format: bioc
    test:
       - PUBMED_TWOFILES:
-         format: txt
+         format: bioc
          rename: PUBMED
 run:
-   - python Sentiment_Analysis.py --inFile {IN:PUBMED/%} --outFile {OUT:sentiment.txt}
-output: sentiment.txt
+   - python convertBioCToTSV.py --inBioC {IN:PUBMED/%} --outTSV {OUT:PUBMED_TSV/%.tsv} 
+#output: sentiment.txt
